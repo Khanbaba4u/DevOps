@@ -7,13 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: WindowsServer:2019-Datacenter
 
+# for PowerShell Core
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- pwsh:Start-AzVM -ResourceGroupName "az104-04-rg1" -Name "KhanVm"
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
