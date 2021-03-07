@@ -11,5 +11,5 @@ pool:
 
 # for PowerShell Core
 steps:
-- pwsh:Start-AzVM -ResourceGroupName "az104-04-rg1" -Name "KhanVm"
+- pwsh: Start-AzVM -ResourceGroupName "az104-04-rg1" -Name "KhanVm"
 
